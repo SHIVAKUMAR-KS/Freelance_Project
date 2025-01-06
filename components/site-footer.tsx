@@ -36,7 +36,7 @@ export function SiteFooter() {
   return (
     <footer className="bg-blue-950 text-white">
       <div className="container py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-1">
             <p className="text-sm leading-loose">
               Design outstanding interfaces with advanced Figma features in a matter of minutes.

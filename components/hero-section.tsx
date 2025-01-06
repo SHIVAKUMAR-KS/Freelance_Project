@@ -56,8 +56,8 @@ export function HeroSection() {
             <Button size="lg" className="bg-orange-500 hover:bg-orange-600">
               Talk An Expert
             </Button>
-            <Button size="lg" variant="outline" className="gap-2">
-              <span className="h-2 w-2 rounded-full bg-red-500" />
+            <Button size="lg" variant="outline" className="bg-orange-500 hover:bg-orange-600">
+              <span className="h-2 w-2 rounded-full bg-black-500" />
               See how it works
             </Button>
           </div>

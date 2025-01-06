@@ -102,25 +102,73 @@ body {
     @apply bg-card text-card-foreground shadow rounded p-6;
   }
 
+  /* Grid Layout (Responsive) */
   .grid-layout {
     @apply grid gap-4;
   }
 
-  @screen sm {
+  /* Small screen: 1 column */
+  @media (max-width: 639px) {
     .grid-layout {
-      @apply grid-cols-1;
+      @apply grid-cols-1; /* 1 column */
     }
   }
 
-  @screen md {
+  /* Medium screen: 2 columns */
+  @media (min-width: 640px) {
     .grid-layout {
-      @apply grid-cols-2;
+      @apply grid-cols-2; /* 2 columns */
     }
   }
 
-  @screen lg {
+  /* Large screen: 3 columns */
+  @media (min-width: 768px) {
     .grid-layout {
-      @apply grid-cols-3;
+      @apply grid-cols-3; /* 3 columns */
     }
+  }
+
+  /* Extra large screen: 4 columns */
+  @media (min-width: 1024px) {
+    .grid-layout {
+      @apply grid-cols-4; /* 4 columns */
+    }
+  }
+}
+
+/* Custom Body Adjustments for Small Screens */
+@media (max-width: 639px) {
+  body {
+    font-size: 14px; /* Reduce font size for smaller screens */
+    line-height: 1.4; /* Adjust line-height for readability */
+  }
+
+  h1 {
+    font-size: 1.25rem; /* Smaller font for heading */
+  }
+
+  h2 {
+    font-size: 1.125rem; /* Smaller font for h2 */
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem; /* Add padding for smaller screens */
+  }
+
+  .card {
+    padding: 1rem; /* Reduce padding inside card */
+  }
+}
+
+/* Custom Body Adjustments for Medium Screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px; /* Adjust font size for medium screens */
+  }
+
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem; /* Add more padding */
   }
 }

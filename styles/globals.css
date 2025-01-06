@@ -48,6 +48,7 @@ body {
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -90,5 +91,49 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 640px) {
+  :root {
+    --primary: 0 0% 25%; /* Adjust for small screens */
+    --primary-foreground: 0 0% 75%;
+    --sidebar-background: 0 0% 95%;
+  }
+  
+  /* Example of responsive font-size adjustments */
+  body {
+    font-size: 0.875rem; /* Smaller text for mobile */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  /* Example of responsive padding adjustments */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Adjust layout for small screens */
+  .grid {
+    grid-template-columns: 1fr; /* Stack grid items for small screens */
+  }
+  
+  .sidebar {
+    width: 100%; /* Full-width sidebar on mobile */
+  }
+
+  /* Adjust buttons for mobile */
+  .button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  /* Adjust spacing in footer */
+  footer {
+    padding: 2rem 1rem;
   }
 }

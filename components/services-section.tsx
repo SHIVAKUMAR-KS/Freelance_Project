@@ -41,12 +41,18 @@ const services = [
   }
 ]
 
+const companies = [
+  { name: "TechInnovate Solutions", href: "/companies/techinnovate-solutions" },
+  { name: "GreenEco Enterprises", href: "/companies/greeneco-enterprises" },
+  { name: "GlobalHealth Dynamics", href: "/companies/globalhealth-dynamics" },
+]
+
 export function ServicesSection() {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container">
         <div className="text-center space-y-4 mb-12">
-          <p className="text-orange-500 font-medium">WELCOME TO REGISTER KARO App</p>
+          <p className="text-orange-500 font-medium">WELCOME TO REGISTERKARO.IN</p>
           <h2 className="text-3xl font-bold">Explore Our Services</h2>
         </div>
         
@@ -76,8 +82,22 @@ export function ServicesSection() {
           })}
         </div>
 
-        <div className="text-center mt-12">
-          <Button variant="outline" size="lg">
+        <div className="mt-16">
+          <h3 className="text-2xl font-bold mb-6 text-center">Featured Companies</h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            {companies.map((company, index) => (
+              <div key={index} className="text-center">
+                <h4 className="text-lg font-semibold mb-4">{company.name}</h4>
+                <Button asChild>
+                  <Link href={company.href}>View Details</Link>
+                </Button>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="text-center mt-12 ">
+          <Button variant="outline" size="lg" className="bg-orange-500 hover:bg-orange-600">
             See All Services
           </Button>
         </div>
