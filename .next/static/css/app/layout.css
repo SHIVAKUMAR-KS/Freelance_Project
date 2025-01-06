@@ -568,10 +568,9 @@ video {
     transition: all 0.3s;
 }
 
-  button:hover {
-  background-color: hsl(var(--primary-foreground));
-  color: hsl(var(--primary));
-}
+  /* button:hover {
+    @apply bg-primary-foreground text-primary;
+  } */
 
   input, textarea {
   border-radius: 0.25rem;
@@ -978,9 +977,6 @@ video {
 }
 .h-svh {
   height: 100svh;
-}
-.h-screen {
-  height: 100vh;
 }
 .max-h-96 {
   max-height: 24rem;

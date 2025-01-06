@@ -86,9 +86,9 @@ body {
     transition: all 0.3s;
   }
 
-  button:hover {
+  /* button:hover {
     @apply bg-primary-foreground text-primary;
-  }
+  } */
 
   input, textarea {
     @apply bg-input text-foreground border rounded px-4 py-2 focus:ring;
