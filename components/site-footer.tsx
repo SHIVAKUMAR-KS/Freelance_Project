@@ -72,7 +72,7 @@ export function SiteFooter() {
       <div className="border-t border-white/10">
         <div className="container py-6 flex justify-center items-center  ">
           <p className="text-sm text-white/60 text-center items-center">
-            © 2024 RegisterKaro. All Rights Reserved.
+            © 2025 Register Karo. All Rights Reserved.
           </p>
           <Button
             variant="ghost"
